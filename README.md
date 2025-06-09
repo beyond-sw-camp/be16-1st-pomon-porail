@@ -1,4 +1,6 @@
  🚂 Porail 🚂
+ ![image](https://github.com/user-attachments/assets/29dd916a-055c-4ab7-9174-b5e0898bd4bc)
+
 
 **팀명: POMON**
 
