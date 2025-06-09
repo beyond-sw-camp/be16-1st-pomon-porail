@@ -41,7 +41,7 @@
 ---
 
 ## 🗓️ 개발일정
-https://onedrive.live.com/personal/3771d46eee13b355/_layouts/15/Doc.aspx?sourcedoc=%7Be6276b54-349b-4860-81ac-d6bb57764f94%7D&action=default&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy8zNzcxZDQ2ZWVlMTNiMzU1L0VWUnJKLWFiTkdCSWdheld1MWQyVDVRQkx1TXhvMlN4RDFzM1E0el90RTRHanc_ZT1ZNm5YMXc&slrid=9e4ea6a1-40fa-9000-3daf-6f450ae06f15&originalPath=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy8zNzcxZDQ2ZWVlMTNiMzU1L0VWUnJKLWFiTkdCSWdheld1MWQyVDVRQkx1TXhvMlN4RDFzM1E0el90RTRHanc_cnRpbWU9TUQyMTl3V24zVWc&CID=0edb2a0e-d422-4b4b-88b1-9a30f1e3bd21&_SRM=0:G:39
+(https://github.com/beyond-sw-camp/be16-1st-pomon-porail/blob/main/images/pomon_WBS.pdf)
 ![image](https://github.com/user-attachments/assets/e477754b-af8a-429b-a69b-df0f4c1c460b)
 
 
