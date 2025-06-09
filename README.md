@@ -3,7 +3,7 @@
 **팀명: POMON**
 
 **팀원**
-권수연, 김송옥 임진우, 조은성
+권수연, 김송옥, 임진우, 조은성
 
 ## 스택
 <p>
@@ -18,11 +18,13 @@
 
 
 ### 💡 프로젝트 개요
-<img src="https://github.com/user-attachments/assets/47fdb142-8457-4ce9-9503-32a5aefa0888">
+![image](https://github.com/user-attachments/assets/8d9130ff-da64-4526-8c65-6d2eb78897d8)
+
 
 복잡한 기차 예매 시스템을 구축하여 테스트를 해볼 수 있도록 서비스를 기획해 보았습니다.
 
-실제 서비스와의 구현도를 위해 관리자와 유저를 구분하여 DB를 설계 했습니다.
+
+
 
 ### ✨ 주요 기능
 
@@ -438,8 +440,60 @@ end;
 <summary><b>조회</b></summary>
 	
 ```sql
+-- 회원(1) 회원가입
+start transaction;
+
+-- 아이디 유효성 검사 
+select count(seq)
+from member
+where member_id = 'tndusl49@naver.com';
+
+insert into member(member_id, password, name, tp_no) values ('tndusl49@naver.com', 'Tp4458', '권수연', '010-3032-6640');
+
+commit;
+
+
+
+-- 회원(2) 기차 시간 조회
+-- 열차 정보, 출발 시간, 출발 역, 도착 시간, 도착 역
+-- 사용자가 6월 7일 8시 이후에 서울 > 대전으로 이동한다고 가정.
+-- 열차 정보, 출발 시간, 출발 역, 도착 시간, 도착 역
+SELECT 
+    s.seq AS schedule_seq,
+    t.type,
+    t.train_id,
+    d1.departure_time AS 출발시간,
+    d1.departure AS 출발역,
+    d2.destination_time AS 도착시간,
+    d2.destination AS 도착역
+FROM 
+    schedules s
+INNER JOIN 
+    train t ON s.train_seq = t.seq
+INNER JOIN 
+    schedules_detail d1 ON s.seq = d1.schedules_seq AND d1.departure = '서울'
+INNER JOIN 
+    schedules_detail d2 ON s.seq = d2.schedules_seq AND d2.destination = '대전'
+WHERE 
+    d1.departure_time >= '2025-06-07 08:00:00';
+
+		
+		
+-- 회원(3) 예약 내역 상세 조회
+select r.seq as 예약번호, r.reservation_id as 예약명, r.update_at as 예약일
+, d.departure as 출발역, d.departure_time as 출발시간
+, d.destination as 도착역, d.destination_time as 도착시간
+, t.train_id as 기차명, s.room_id as 호차번호, s.seat_id as 좌석번호
+from reservation r inner join seat_management m on r.seq = m.reservation_seq
+inner join schedules_detail d on d.seq = m.schedules_detail_seq
+inner join seat s on s.seq = m.seat_seq
+inner join train t on t.seq = s.train_seq
+where r.member_seq = 2
+and r.update_at between '2025-01-01 :00:00:00' and now();
+
+
 -- 예약 가능한 기차 조회
--- 관리자(3) 스케줄 & 스케줄상세 & 좌석관리 추가
+-- 관리자(4) 스케줄 & 스케줄상세 & 좌석관리 추가
 start transaction;
 
 -- train_seq 조회
