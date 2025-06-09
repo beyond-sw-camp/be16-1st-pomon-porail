@@ -74,7 +74,7 @@ sql
 <details>
   <summary> 👩‍💻회원</summary>
 ```
-1. 회원가입
+<summary> 1. 회원가입</summary>
 
 delimiter //
 create procedure user_join(
@@ -176,6 +176,7 @@ select password into memberPw from member where member_id= idInput and email = e
     end if;
 end;
  // delimiter ;
+```
 ```
 
 
