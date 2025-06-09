@@ -39,36 +39,37 @@
 ## 📋 ERD
 <img src="./img/MediBooker.jpg" alt="ERD" width="1000" height="700"/>
 
+---
 ### 🖌️ 주요 쿼리 요약
 
-#### DDL (Data Definition Language)
+#### DDL
 
 ```sql
--- 환자 테이블 생성
-CREATE TABLE Patients (
-    patient_id INT PRIMARY KEY AUTO_INCREMENT,
-    patient_name VARCHAR(30) NOT NULL,
-    identity_number VARCHAR(20) NOT NULL UNIQUE,
-    patient_phone VARCHAR(20) NOT NULL UNIQUE,
-    address VARCHAR(255) NOT NULL,
-    patient_authentication ENUM('N', 'Y') DEFAULT 'Y',
-    del_yn ENUM('N', 'Y') DEFAULT 'N'
+-- 운행상세정보 테이블 생성
+create table schedules_detail(
+	seq bigint auto_increment, taken_times datetime not null, departure varchar(255) not null,
+    destination varchar(255) not null, departure_time datetime not null, 
+    destination_time datetime not null, station_detail_seq bigint not null, schedules_seq bigint not null,
+	create_at datetime not null default current_timestamp,
+    update_at datetime not null default current_timestamp on update current_timestamp,
+	primary key(seq)
 );
 
--- 진료기록 테이블
-CREATE TABLE Medical_Records (
-    record_id INT PRIMARY KEY AUTO_INCREMENT,
-    patient_id INT NOT NULL,
-    doctor_id INT NOT NULL,
-    department_id INT NOT NULL,
-    manager_id INT NOT NULL,
-    diagnosis VARCHAR(255) NOT NULL,
-    treatment TEXT NOT NULL,
-    prescription VARCHAR(255) NOT NULL,
-    visit_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    del_yn ENUM('N', 'Y') DEFAULT 'N',
-    FOREIGN KEY (patient_id) REFERENCES Patients (patient_id),
-    FOREIGN KEY (doctor_id) REFERENCES Doctors (doctor_id),
-    FOREIGN KEY (manager_id) REFERENCES Manager (manager_id),
-    FOREIGN KEY (department_id) REFERENCES Departments (department_id)
+-- 좌석관리 테이블 생성
+create table seat_management(
+	seq bigint auto_increment, reservation_seq bigint, is_available enum('true', 'false') not null default 'true',
+    price bigint not null, seat_seq bigint not null, schedules_detail_seq bigint not null,
+	create_at datetime not null default current_timestamp,
+    update_at datetime not null default current_timestamp on update current_timestamp,
+	primary key(seq)
 );
+
+```
+#### DML
+```sql
+
+
+
+```
+
+
