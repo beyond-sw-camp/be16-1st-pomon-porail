@@ -30,6 +30,7 @@
 
 ## 🗓️ 개발일정
 <img src="./img/WBS.png" alt="개발일정(WBS)" width="1000" height="500"/>
+[pomon.pdf](https://github.com/user-attachments/files/20648846/pomon.pdf)
 
 ---
 ## 📝 요구사항정의서
