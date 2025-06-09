@@ -1,6 +1,6 @@
 delimiter //
 
-create procedure reserve_multi_segment_seat(
+create procedure multi_reservation(
     in i_member_id varchar(255),          -- 입력값 1: 회원 id
     in i_schedules_seq bigint,            -- 입력값 2: 운행 정보 id (예: ktx 101편)
     in i_start_station varchar(255),      -- 입력값 3: 출발역 (예: '대전')
