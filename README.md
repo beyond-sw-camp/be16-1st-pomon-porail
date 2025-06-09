@@ -73,9 +73,9 @@ sql
 
 <details>
   <summary> 👩‍💻회원</summary>
-```
-<summary> 1. 회원가입</summary>
 
+<details> <summary>1. 회원가입 🔐</summary>
+```
 delimiter //
 create procedure user_join(
 in memberIdInput varchar(255), 
@@ -95,6 +95,7 @@ begin
     end if;
 end
 // delimiter ;
+```
 
 2. 비밀번호 변경
 
