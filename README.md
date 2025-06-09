@@ -1,51 +1,43 @@
+# 🚂 Porail 🚂
 
-&lt;br>
-
-&lt;div align="center">
-&lt;img src="[의심스러운 링크 삭제됨]" alt="Porail Logo" width="200"/>
-&lt;h1>Porail 🚂&lt;/h1>
-&lt;p>&lt;strong>모두를 위한 간편하고 빠른 기차 예매 서비스&lt;/strong>&lt;/p>
-&lt;p>복잡한 절차 없이 누구나 쉽게 기차표를 검색하고, 좌석을 선택하며, 예매할 수 있는 웹 기반 서비스입니다.&lt;/p>
-&lt;/div>
+<img src="./img/medibooker.jpeg" alt="Medibooker" width="1000" height="750"/>
 
 **팀명: POMON**
 
 **팀원**
 권수연, 김송옥 임진우, 조은성
 
-&lt;br>
+## 스택
+<p>
+<img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white">
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/datagrip-000000?style=for-the-badge&logo=datagrip&logoColor=white">
+<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+<img src="https://img.shields.io/badge/jira-0052CC?style=for-the-badge&logo=jira&logoColor=white">
+<img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
+</p>
+
 ✨ 주요 기능
 실시간 열차 조회: 출발지, 도착지, 날짜를 기반으로 실시간 열차 운행 정보를 조회합니다.
-간편한 좌석 선택: 직관적인 UI를 통해 원하는 좌석을 쉽게 선택하고 예매할 수 있습니다.
-빠른 예매 및 결제: 간편 결제 시스템을 연동하여 빠르고 안전한 예매가 가능합니다. (또는 결제 시뮬레이션)
 예매 내역 관리: 마이페이지에서 자신의 예매 내역을 한눈에 확인하고 관리할 수 있습니다.
-반응형 웹 디자인: 데스크톱, 태블릿, 모바일 등 모든 기기에서 최적화된 화면을 제공합니다.
-&lt;br>
 
 ### 💡 프로젝트 배경 및 필요성
 
 ---
 
-### 🛠️ 스택 (Tech Stack)
-
-*(여기에 사용된 주요 기술 스택을 기입해주세요. 예: Java, Spring Boot, MySQL, AWS, React 등)*
+## 🗓️ 개발일정
+<img src="./img/WBS.png" alt="개발일정(WBS)" width="1000" height="500"/>
 
 ---
+## 📝 요구사항정의서
+<img src="./img/요구사항정의서.png" alt="요구사항정의서" width="1000" height="500"/>
 
-### 🗓️ 개발일정
-
-*(개발일정 문서 링크 또는 이미지 삽입. 예: [개발일정 보기](개발일정_문서_링크) 또는 아래처럼 이미지 삽입)*
 ---
-
-### 📝 요구사항 정의서
-
-*(요구사항 정의서 문서 링크 또는 이미지 삽입. 예: [요구사항 정의서 보기](요구사항정의서_문서_링크) 또는 아래처럼 이미지 삽입)*
----
-
-### 📋 ERD (Entity Relationship Diagram)
-
-*(ERD 이미지 또는 링크 삽입. 예: [ERD 보기](ERD_링크) 또는 아래처럼 이미지 삽입)*
----
+## 📋 ERD
+<img src="./img/MediBooker.jpg" alt="ERD" width="1000" height="700"/>
 
 ### 🖌️ 주요 쿼리 요약
 
