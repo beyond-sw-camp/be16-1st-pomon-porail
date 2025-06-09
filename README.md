@@ -68,7 +68,19 @@ create table seat_management(
 #### DML
 ```sql
 
+📚 주요 프로시저
+전체 프로시저 바로가기
 
+<details>
+  <summary>👉 클릭해서 펼처기 👩‍💻회원</summary>
+
+  여기에 펼쳐질 내용을 작성합니다.  
+  여러 줄도 가능합니다.
+
+</details>
+📘조회
+📖예매
+🧪결
 
 ```
 
