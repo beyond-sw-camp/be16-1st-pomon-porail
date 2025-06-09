@@ -65,8 +65,8 @@ create table seat_management(
 );
 
 ```
-#### DML
-```sql
+
+sql
 
 📚 주요 프로시저
 전체 프로시저 바로가기
@@ -82,6 +82,6 @@ create table seat_management(
 📖예매
 🧪결
 
-```
+
 
 
